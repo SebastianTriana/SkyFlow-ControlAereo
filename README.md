@@ -1,11 +1,11 @@
-# ✈ SkyFlow - Sistema de Control de Tráfico Aéreo
+#  SkyFlow - Sistema de Control de Tráfico Aéreo
 
 > **Proyecto Universitario de Estructuras de Datos**  
 > Implementación *from scratch* (desde cero) de cuatro estructuras de datos clásicas en Python puro (sin librerías externas), bajo el principio **KISS** (simplicidad, legibilidad y facilidad de sustentación en vivo).
 
 ---
 
-## 📋 Descripción del Proyecto
+##  Descripción del Proyecto
 
 **SkyFlow** simula las operaciones de una torre de control de tráfico aéreo mediante la orquestación de 4 estructuras de datos fundamentales implementadas explícitamente con clases de nodos, punteros y arreglos base:
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 🧠 Estructuras de Datos Implementadas
+##  Estructuras de Datos Implementadas
 
 Todas las estructuras se implementaron de forma explícita sin recurrir a colecciones ocultas del lenguaje (`queue.Queue`, `collections.deque` o `.pop(0)`):
 
@@ -35,7 +35,7 @@ Todas las estructuras se implementaron de forma explícita sin recurrir a colecc
 
 ---
 
-## 📂 Estructura del Repositorio
+##  Estructura del Repositorio
 
 ```text
 SkyFlow/
@@ -62,7 +62,7 @@ SkyFlow/
 
 ---
 
-## 🚀 Cómo Ejecutar el Proyecto
+##  Cómo Ejecutar el Proyecto
 
 El proyecto requiere **Python 3.10 o superior** y no necesita instalar ninguna librería externa (`pip`).
 
@@ -87,7 +87,7 @@ python main.py
 
 ---
 
-## 🧪 Pruebas Unitarias
+##  Pruebas Unitarias
 
 Para ejecutar el conjunto completo de las 26 pruebas automatizadas:
 
@@ -95,9 +95,3 @@ Para ejecutar el conjunto completo de las 26 pruebas automatizadas:
 python -m unittest discover -s tests -v
 ```
 
----
-
-## 🎓 Autor y Créditos
-- **Materia:** Estructuras de Datos
-- **Institución:** Universidad Nacional de Colombia
-- **Año:** 2026
