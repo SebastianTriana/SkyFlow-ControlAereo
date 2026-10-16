@@ -1,8 +1,8 @@
-# ✈ SkyFlow - Sistema de Control de Tráfico Aéreo
+#  SkyFlow - Sistema de Control de Tráfico Aéreo
 
 ---
 
-## 📋 Descripción del Proyecto
+##  Descripción del Proyecto
 
 **SkyFlow** simula las operaciones de una torre de control de tráfico aéreo mediante la orquestación de 4 estructuras de datos fundamentales implementadas explícitamente con clases de nodos, punteros y arreglos base:
 
@@ -13,7 +13,7 @@
 
 ---
 
-## 🧠 Estructuras de Datos Implementadas
+##  Estructuras de Datos Implementadas
 
 Todas las estructuras se implementaron de forma explícita sin recurrir a colecciones ocultas del lenguaje (`queue.Queue`, `collections.deque` o `.pop(0)`):
 
@@ -32,7 +32,7 @@ Todas las estructuras se implementaron de forma explícita sin recurrir a colecc
 
 ---
 
-## 📂 Estructura del Repositorio
+##  Estructura del Repositorio
 
 ```text
 SkyFlow/
@@ -61,16 +61,16 @@ SkyFlow/
 
 ---
 
-## 📚 Documentación Formal del Proyecto
+##  Documentación Formal del Proyecto
 
 Para la revisión y sustentación académica detallada, consulta los documentos complementarios:
 
-* 📘 [**Manual de Usuario (`MANUAL_USUARIO.md`)**](MANUAL_USUARIO.md): Guía paso a paso para ejecutar el sistema por consola y GUI, con ejemplos prácticos de entrada/salida y marcadores visuales para capturas de pantalla.
-* 🧠 [**Explicación de Estructuras de Datos (`ESTRUCTURAS_EXPLICACION.md`)**](ESTRUCTURAS_EXPLICACION.md): Justificación teórica y práctica de las 4 estructuras, tabla de complejidades Big-O completa, argumentación de optimalidad frente a arreglos tradicionales y diagramas de punteros en memoria.
+*  [**Manual de Usuario (`MANUAL_USUARIO.md`)**](MANUAL_USUARIO.md): Guía paso a paso para ejecutar el sistema por consola y GUI, con ejemplos prácticos de entrada/salida y marcadores visuales para capturas de pantalla.
+*  [**Explicación de Estructuras de Datos (`ESTRUCTURAS_EXPLICACION.md`)**](ESTRUCTURAS_EXPLICACION.md): Justificación teórica y práctica de las 4 estructuras, tabla de complejidades Big-O completa, argumentación de optimalidad frente a arreglos tradicionales y diagramas de punteros en memoria.
 
 ---
 
-## 🚀 Cómo Ejecutar el Proyecto
+##  Cómo Ejecutar el Proyecto
 
 El proyecto requiere **Python 3.10 o superior** y no necesita instalar ninguna librería externa (`pip`).
 
@@ -95,7 +95,7 @@ python main.py
 
 ---
 
-## 🧪 Pruebas Unitarias
+##  Pruebas Unitarias
 
 Para ejecutar el conjunto completo de las 26 pruebas automatizadas:
 
@@ -105,14 +105,14 @@ python -m unittest discover -s tests -v
 
 ---
 
-## 🤖 Declaración de Metodología y Uso de Inteligencia Artificial
+##  Declaración de Metodología y Uso de Inteligencia Artificial
 
 En concordancia con las buenas prácticas éticas y académicas en la formación universitaria de ingeniería de sistemas y computación, se declara formalmente la distribución metodológica del trabajo y el uso de herramientas de asistencia en el desarrollo de **SkyFlow**:
 
 * **70% Asistencia de Herramientas de IA (Google Antigravity / Claude Sonnet):**
   * Generación y refinamiento iterativo de código base de estructuras de datos con diseño limpio y modular.
-  * Construcción de la interfaz gráfica interactiva en `tkinter` (Modo Claro) y cálculo reactivo de dimensiones en canvas.
-  * Elaboración de la suite de pruebas unitarias (`unittest`) y redacción de esquemas de documentación técnica y manuales en Markdown.
+  * Construcción de la interfaz gráfica interactiva en `tkinter` y cálculo reactivo de dimensiones en canvas.
+  * Elaboración de la suite de pruebas unitarias y redacción de esquemas de documentación técnica y manuales en Markdown.
 * **30% Desarrollo, Diseño, Auditoría y Validación por el Estudiante:**
   * Concepción y diseño conceptual de la arquitectura de la torre de control y selección de las cuatro estructuras de datos.
   * Definición estricta de requerimientos y restricciones algorítmicas (implementación mediante nodos, punteros y sin colecciones ocultas).
