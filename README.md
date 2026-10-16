@@ -1,8 +1,5 @@
 # ✈ SkyFlow - Sistema de Control de Tráfico Aéreo
 
-> **Proyecto Universitario de Estructuras de Datos**  
-> Implementación *from scratch* (desde cero) de cuatro estructuras de datos clásicas en Python puro (sin librerías externas), bajo el principio **KISS** (simplicidad, legibilidad y facilidad de sustentación en vivo).
-
 ---
 
 ## 📋 Descripción del Proyecto
@@ -39,7 +36,7 @@ Todas las estructuras se implementaron de forma explícita sin recurrir a colecc
 
 ```text
 SkyFlow/
-├── estructuras/              # Estructuras de datos desde cero
+├── estructuras/              # Módulos de estructuras de datos
 │   ├── cola_fifo.py          # Cola con punteros frente y final (O(1))
 │   ├── lista_doble.py        # Nodos con punteros anterior y siguiente (O(1))
 │   ├── cola_prioridad.py     # Min-Heap binario sobre lista base (O(log n))
@@ -113,12 +110,12 @@ python -m unittest discover -s tests -v
 En concordancia con las buenas prácticas éticas y académicas en la formación universitaria de ingeniería de sistemas y computación, se declara formalmente la distribución metodológica del trabajo y el uso de herramientas de asistencia en el desarrollo de **SkyFlow**:
 
 * **70% Asistencia de Herramientas de IA (Google Antigravity / Claude Sonnet):**
-  * Generación y refinamiento iterativo de código base de estructuras de datos con estricto cumplimiento del principio KISS.
+  * Generación y refinamiento iterativo de código base de estructuras de datos con diseño limpio y modular.
   * Construcción de la interfaz gráfica interactiva en `tkinter` (Modo Claro) y cálculo reactivo de dimensiones en canvas.
   * Elaboración de la suite de pruebas unitarias (`unittest`) y redacción de esquemas de documentación técnica y manuales en Markdown.
 * **30% Desarrollo, Diseño, Auditoría y Validación por el Estudiante:**
   * Concepción y diseño conceptual de la arquitectura de la torre de control y selección de las cuatro estructuras de datos.
-  * Definición estricta de requerimientos y restricciones algorítmicas (*from scratch*, sin colecciones ocultas de librerías externas).
+  * Definición estricta de requerimientos y restricciones algorítmicas (implementación mediante nodos, punteros y sin colecciones ocultas).
   * Inspección, auditoría y revisión manual línea por línea del código fuente generado para garantizar su legibilidad, corrección sintáctica y facilidad de sustentación en vivo.
   * Pruebas funcionales en tiempo real, validación de la experiencia de usuario y resolución de casos de borde en Windows.
 

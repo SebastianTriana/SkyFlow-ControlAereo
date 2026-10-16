@@ -21,7 +21,7 @@
 
 ## 1. Resumen Ejecutivo de Arquitectura
 
-El sistema **SkyFlow** fue diseñado para modelar un aeropuerto en tiempo real sin apoyarse en librerías ni estructuras de datos prefabricadas del lenguaje (tales como `queue.Queue`, `collections.deque` o `heapq`). Cada estructura fue programada **desde cero (from scratch)** utilizando nodos explícitos, punteros de referencia y representación binaria en arreglos base.
+El sistema **SkyFlow** fue diseñado para modelar un aeropuerto en tiempo real sin apoyarse en librerías ni estructuras de datos prefabricadas del lenguaje (tales como `queue.Queue`, `collections.deque` o `heapq`). Cada estructura fue programada utilizando clases de nodos explícitos, punteros de referencia y representación binaria en arreglos base.
 
 La arquitectura distribuye las responsabilidades en cuatro estructuras especializadas según las restricciones físicas del problema aeronáutico:
 

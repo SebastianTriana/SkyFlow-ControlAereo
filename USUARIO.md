@@ -19,7 +19,7 @@ Bienvenido al manual de usuario de **SkyFlow**, un simulador de torre de control
 
 ## 1. Introducción y Propósito
 
-**SkyFlow** permite coordinar el tráfico aéreo en un aeropuerto mediante 4 operaciones clave, cada una respaldada por una estructura de datos clásica implementada desde cero:
+**SkyFlow** permite coordinar el tráfico aéreo en un aeropuerto mediante 4 operaciones clave, cada una respaldada por una estructura de datos clásica:
 
 * **Pista de Carreteo y Despegue:** Gestionada por una **Cola FIFO** ($O(1)$) donde el primer avión en llegar es el primero en despegar.
 * **Espacio Aéreo (Radar):** Gestionado por una **Lista Doblemente Enlazada** ($O(1)$) que monitorea los aviones en vuelo.
