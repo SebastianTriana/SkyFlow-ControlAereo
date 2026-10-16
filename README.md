@@ -57,8 +57,19 @@ SkyFlow/
 ├── main.py                   # Menú interactivo de consola
 ├── Iniciar_SkyFlow_Grafico.bat # Lanzador de doble clic para la GUI
 ├── Iniciar_SkyFlow_Consola.bat # Lanzador de doble clic para la consola
+├── MANUAL_USUARIO.md         # Manual de usuario con ejemplos y guía de capturas
+├── ESTRUCTURAS_EXPLICACION.md # Justificación teórica y análisis Big-O
 └── README.md
 ```
+
+---
+
+## 📚 Documentación Formal del Proyecto
+
+Para la revisión y sustentación académica detallada, consulta los documentos complementarios:
+
+* 📘 [**Manual de Usuario (`MANUAL_USUARIO.md`)**](MANUAL_USUARIO.md): Guía paso a paso para ejecutar el sistema por consola y GUI, con ejemplos prácticos de entrada/salida y marcadores visuales para capturas de pantalla.
+* 🧠 [**Explicación de Estructuras de Datos (`ESTRUCTURAS_EXPLICACION.md`)**](ESTRUCTURAS_EXPLICACION.md): Justificación teórica y práctica de las 4 estructuras, tabla de complejidades Big-O completa, argumentación de optimalidad frente a arreglos tradicionales y diagramas de punteros en memoria.
 
 ---
 
@@ -94,6 +105,22 @@ Para ejecutar el conjunto completo de las 26 pruebas automatizadas:
 ```bash
 python -m unittest discover -s tests -v
 ```
+
+---
+
+## 🤖 Declaración de Metodología y Uso de Inteligencia Artificial
+
+En concordancia con las buenas prácticas éticas y académicas en la formación universitaria de ingeniería de sistemas y computación, se declara formalmente la distribución metodológica del trabajo y el uso de herramientas de asistencia en el desarrollo de **SkyFlow**:
+
+* **70% Asistencia de Herramientas de IA (Google Antigravity / Claude Sonnet):**
+  * Generación y refinamiento iterativo de código base de estructuras de datos con estricto cumplimiento del principio KISS.
+  * Construcción de la interfaz gráfica interactiva en `tkinter` (Modo Claro) y cálculo reactivo de dimensiones en canvas.
+  * Elaboración de la suite de pruebas unitarias (`unittest`) y redacción de esquemas de documentación técnica y manuales en Markdown.
+* **30% Desarrollo, Diseño, Auditoría y Validación por el Estudiante:**
+  * Concepción y diseño conceptual de la arquitectura de la torre de control y selección de las cuatro estructuras de datos.
+  * Definición estricta de requerimientos y restricciones algorítmicas (*from scratch*, sin colecciones ocultas de librerías externas).
+  * Inspección, auditoría y revisión manual línea por línea del código fuente generado para garantizar su legibilidad, corrección sintáctica y facilidad de sustentación en vivo.
+  * Pruebas funcionales en tiempo real, validación de la experiencia de usuario y resolución de casos de borde en Windows.
 
 ---
 
