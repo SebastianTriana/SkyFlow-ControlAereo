@@ -22,10 +22,10 @@ Todas las estructuras se implementaron de forma explícita sin recurrir a colecc
 
 | Estructura | Archivo | Rol en el Sistema | Operaciones Clave | Complejidad Big-O |
 | :--- | :--- | :--- | :--- | :---: |
-| **Cola FIFO (`Queue`)** | [`estructuras/cola_fifo.py`](estructuras/cola_fifo.py) | Fila de carreteo y pista de despegue | `enqueue`, `dequeue`, `peek` | **$O(1)$** |
+| **Cola (`Queue`)** | [`estructuras/cola_fifo.py`](estructuras/cola_fifo.py) | Fila de carreteo y pista de despegue | `enqueue`, `dequeue`, `peek` | **$O(1)$** |
 | **Lista Doblemente Enlazada (`DoublyLinkedList`)** | [`estructuras/lista_doble.py`](estructuras/lista_doble.py) | Radar de aeronaves en el espacio aéreo | `insert`, `remove(nodo)` | **$O(1)$** |
 | **Min-Heap (`PriorityQueue`)** | [`estructuras/cola_prioridad.py`](estructuras/cola_prioridad.py) | Rampa de aproximación por criticidad de emergencia | `insert`, `extract_min` | **$O(\log n)$** |
-| **Pila LIFO (`Stack`)** | [`estructuras/pila_lifo.py`](estructuras/pila_lifo.py) | Historial de la torre y función Deshacer (*undo*) | `push`, `pop`, `peek` | **$O(1)$** |
+| **Pila (`Stack`)** | [`estructuras/pila_lifo.py`](estructuras/pila_lifo.py) | Historial de la torre y función Deshacer (*undo*) | `push`, `pop`, `peek` | **$O(1)$** |
 
 ### Semáforo de Prioridades de Aterrizaje
 - 🔴 **Nivel 1 (Crítico / Mayday):** Emergencia máxima (fallo de motor, despresurización).
