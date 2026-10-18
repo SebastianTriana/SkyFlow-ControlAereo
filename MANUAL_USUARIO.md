@@ -26,7 +26,6 @@
 4. [Guía Detallada de la Interfaz Gráfica (`gui.py`)](#4-guía-detallada-de-la-interfaz-gráfica-guipy)
    - [4.1 Distribución General de la Pantalla](#41-distribución-general-de-la-pantalla)
    - [4.2 Operaciones Paso a Paso en la GUI](#42-operaciones-paso-a-paso-en-la-gui)
-   - [4.3 Interpretación Visual de Estructuras de Datos](#43-interpretación-visual-de-estructuras-de-datos)
 5. [Atajos de Teclado y Ayudas de Sustentación](#5-atajos-de-teclado-y-ayudas-de-sustentación)
 6. [Resolución de Problemas Frecuentes](#6-resolución-de-problemas-frecuentes)
 
