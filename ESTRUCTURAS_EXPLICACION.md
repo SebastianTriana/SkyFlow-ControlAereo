@@ -1,4 +1,4 @@
-# 🧠 Justificación Teórica y Práctica de Estructuras de Datos - SkyFlow
+#  Justificación Teórica y Práctica de Estructuras de Datos - SkyFlow
 
 > **Documento de Sustentación Teórica y Análisis Algorítmico**  
 > **Asignatura:** Estructuras de Datos  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📑 Tabla de Contenidos
+##  Tabla de Contenidos
 1. [Resumen Ejecutivo de Arquitectura](#1-resumen-ejecutivo-de-arquitectura)
 2. [Tabla Comparativa de Complejidades Big-O](#2-tabla-comparativa-de-complejidades-big-o)
 3. [Análisis Detallado por Estructura de Datos](#3-análisis-detallado-por-estructura-de-datos)
