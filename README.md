@@ -119,9 +119,4 @@ En concordancia con las buenas prácticas éticas y académicas en la formación
   * Inspección, auditoría y revisión manual línea por línea del código fuente generado para garantizar su legibilidad, corrección sintáctica y facilidad de sustentación en vivo.
   * Pruebas funcionales en tiempo real, validación de la experiencia de usuario y resolución de casos de borde en Windows.
 
----
 
-## 🎓 Autor y Créditos
-- **Materia:** Estructuras de Datos
-- **Institución:** Universidad Nacional de Colombia
-- **Año:** 2026
