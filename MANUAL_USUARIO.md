@@ -1,4 +1,4 @@
-# 📘 Manual de Usuario - SkyFlow (Control de Tráfico Aéreo)
+#  Manual de Usuario - SkyFlow (Control de Tráfico Aéreo)
 
 > **Documentación Oficial de Usuario para Entrega Académica**  
 > **Asignatura:** Estructuras de Datos  
@@ -6,7 +6,7 @@
 
 ---
 
-## 📑 Tabla de Contenidos
+##  Tabla de Contenidos
 1. [Introducción al Sistema](#1-introducción-al-sistema)
 2. [Requisitos y Formas de Ejecución](#2-requisitos-y-formas-de-ejecución)
    - [2.1 Lanzadores Directos de Windows (.bat)](#21-lanzadores-directos-de-windows-bat)
@@ -65,11 +65,8 @@ Para usuarios en Windows, la forma más rápida y recomendada es utilizar los ar
 ---
 
 ### 2.2 Ejecución por Consola de Comandos
-Si ejecutas desde una terminal (CMD o PowerShell), navega al directorio del proyecto:
+Si ejecutas desde una terminal (CMD o PowerShell), navega al directorio del proyecto.
 
-```cmd
-cd /d "g:\My Drive\UNAL\2026-2\Estructuras\SkyFlow"
-```
 
 * Para iniciar el **modo consola**:
   ```cmd
@@ -101,11 +98,7 @@ G. Abrir Interfaz Gráfica (Tkinter)
 0. Salir
 ```
 
-> [!IMPORTANT]
-> **📸 Captura requerida 01:** `docs/img/01_consola_menu_principal.png`  
-> *Qué debe mostrar la captura:* La ventana de la consola de Windows (CMD/PowerShell) mostrando el menú textual inicial de 1 a 0 con la opción G, limpia y lista para recibir la primera orden.
-
-![Captura: Menú principal en consola](docs/img/01_consola_menu_principal.png)
+<img width="383" height="270" alt="image" src="https://github.com/user-attachments/assets/5cc91928-5f71-49ff-8344-73b68153f131" />
 
 ---
 
@@ -173,11 +166,13 @@ Asigna la pista al vuelo que posee la máxima prioridad (menor valor numérico d
   ```
 * **Efecto en el sistema:** Se extrae la raíz del Heap (`extract_min` en $O(\log n)$), el vuelo cambia su estado a `ATERRIZADO` y se desvincula del radar en $O(1)$.
 
-> [!IMPORTANT]
-> **📸 Captura requerida 02:** `docs/img/02_consola_flujo_completo.png`  
-> *Qué debe mostrar la captura:* La secuencia en consola donde se encola un vuelo (opción 1), despega (opción 2), declara emergencia nivel 1 (opción 3) y aterriza exitosamente (opción 4).
+<img width="554" height="91" alt="image" src="https://github.com/user-attachments/assets/6933157e-35dc-4277-a4b7-587ff3e43629" />
 
-![Captura: Flujo de despegue y aterrizaje en consola](docs/img/02_consola_flujo_completo.png)
+<img width="547" height="45" alt="image" src="https://github.com/user-attachments/assets/0bb265b1-6397-401d-a8ba-02b885aa689f" />
+
+<img width="748" height="79" alt="image" src="https://github.com/user-attachments/assets/409da8de-646d-4dfd-ad7b-ab4ced287bfa" />
+
+<img width="562" height="40" alt="image" src="https://github.com/user-attachments/assets/e4bee626-9054-48f3-b0e3-1fe351e91170" />
 
 ---
 
@@ -244,11 +239,8 @@ Imprime la pila completa de comandos almacenados, desde el más reciente (tope) 
   PEDIR_DESPEGUE -> AV101
   ```
 
-> [!IMPORTANT]
-> **📸 Captura requerida 03:** `docs/img/03_consola_deshacer_historial.png`  
-> *Qué debe mostrar la captura:* La ejecución de la opción 8 (Deshacer) seguida de la opción 9 (Ver historial), demostrando el funcionamiento LIFO.
+<img width="374" height="512" alt="image" src="https://github.com/user-attachments/assets/c1c7c347-d086-4fc3-9d2d-145fb87486fc" />
 
-![Captura: Deshacer comando e historial en consola](docs/img/03_consola_deshacer_historial.png)
 
 ---
 
@@ -264,13 +256,10 @@ Finaliza la ejecución del simulador en consola.
 
 ## 4. Guía Detallada de la Interfaz Gráfica (`gui.py`)
 
-La interfaz gráfica fue concebida en **Modo Claro (Light Mode)** para ofrecer una visibilidad óptima en proyectores y pantallas universitarias.
+La interfaz gráfica fue concebida en **Modo Claro** para ofrecer una visibilidad óptima en proyectores y pantallas.
 
-> [!IMPORTANT]
-> **📸 Captura requerida 04:** `docs/img/04_gui_vista_general.png`  
-> *Qué debe mostrar la captura:* La ventana completa de la interfaz gráfica maximizada, mostrando el panel de control a la izquierda y los tres paneles gráficos (pista, radar, aproximación) a la derecha.
+<img width="1366" height="723" alt="image" src="https://github.com/user-attachments/assets/f00f9a1c-b91a-4496-8f8e-83ab39e6dd86" />
 
-![Captura: Vista general de la interfaz gráfica](docs/img/04_gui_vista_general.png)
 
 ---
 
@@ -297,11 +286,9 @@ La interfaz gráfica fue concebida en **Modo Claro (Light Mode)** para ofrecer u
 2. Haz clic en **`+ Encolar para Despegue (O(1))`**.
 3. Verás aparecer inmediatamente la tarjeta del avión sobre la pista de asfalto.
 
-> [!IMPORTANT]
-> **📸 Captura requerida 05:** `docs/img/05_gui_pista_despegue.png`  
-> *Qué debe mostrar la captura:* La zona superior de la pista de asfalto (`36R`) con al menos 2 aviones encolados, destacando los textos indicadores `▼ frente (sale primero)` y `▲ final (último)`.
 
-![Captura: Pista de despegue y punteros FIFO](docs/img/05_gui_pista_despegue.png)
+<img width="1015" height="170" alt="image" src="https://github.com/user-attachments/assets/a40a2976-901f-464f-a07e-0cf93de8efda" />
+
 
 ---
 
@@ -317,11 +304,9 @@ La interfaz gráfica fue concebida en **Modo Claro (Light Mode)** para ofrecer u
 3. Haz clic en **`🚨 Insertar en Cola de Aterrizaje (Min-Heap)`**.
 4. El avión se trasladará a la rampa inferior de aproximación.
 
-> [!IMPORTANT]
-> **📸 Captura requerida 06:** `docs/img/06_gui_radar_y_enlaces.png`  
-> *Qué debe mostrar la captura:* El radar central con vuelos activos, evidenciando las flechas dobles bidireccionales `prev/next` entre los nodos de la lista doble.
 
-![Captura: Espacio aéreo y enlaces bidireccionales del radar](docs/img/06_gui_radar_y_enlaces.png)
+<img width="1026" height="319" alt="image" src="https://github.com/user-attachments/assets/0a580239-3ced-4f54-a811-2e559e219ce0" />
+
 
 ---
 
@@ -330,11 +315,9 @@ La interfaz gráfica fue concebida en **Modo Claro (Light Mode)** para ofrecer u
 2. Haz clic en **`🛬 Aterrizar Más Urgente (O(log n))`**.
 3. Aparecerá un cuadro de diálogo confirmando el aterrizaje exitoso y el avión saldrá del radar.
 
-> [!IMPORTANT]
-> **📸 Captura requerida 07:** `docs/img/07_gui_min_heap_aterrizaje.png`  
-> *Qué debe mostrar la captura:* La rampa inferior de aterrizaje con vuelos de diferente nivel, mostrando la raíz destacada en rojo/borde grueso y los demás en niveles descendentes.
 
-![Captura: Rampa de aterrizaje y raíz del Min-Heap](docs/img/07_gui_min_heap_aterrizaje.png)
+<img width="1022" height="167" alt="image" src="https://github.com/user-attachments/assets/c1a11e93-ab78-42ff-93e9-1b8e144101fb" />
+
 
 ---
 
@@ -342,11 +325,9 @@ La interfaz gráfica fue concebida en **Modo Claro (Light Mode)** para ofrecer u
 1. Si cometiste una equivocación o quieres demostrar cómo funciona la Pila LIFO, haz clic en **`↩ Deshacer Último Comando (Undo)`**.
 2. La interfaz deshará la última acción y mostrará un mensaje confirmando la reversión del comando.
 
-> [!IMPORTANT]
-> **📸 Captura requerida 08:** `docs/img/08_gui_deshacer_notificacion.png`  
-> *Qué debe mostrar la captura:* El cuadro de diálogo emergente de confirmación de comando deshecho y el estado actualizado en el monitor de tope de pila.
 
-![Captura: Cuadro de diálogo de deshacer comando](docs/img/08_gui_deshacer_notificacion.png)
+<img width="226" height="157" alt="image" src="https://github.com/user-attachments/assets/340d174e-24a2-4ed6-9835-7b5cc5a10245" />
+
 
 ---
 
