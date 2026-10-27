@@ -150,7 +150,7 @@ class InterfazSkyFlow:
         # --- SECCIÓN 1: NUEVO VUELO ---
         lbl_sec1 = tk.Label(
             self.panel_izq,
-            text="1. REGISTRAR EN PISTA [Cola FIFO]",
+            text="1. REGISTRAR EN PISTA",
             font=("Segoe UI", 10, "bold"),
             bg=COLOR_PANEL,
             fg=COLOR_TEXTO,
@@ -183,7 +183,7 @@ class InterfazSkyFlow:
 
         btn_encolar = tk.Button(
             self.panel_izq,
-            text="+ Encolar para Despegue (O(1))",
+            text="+ Encolar para Despegue",
             font=("Segoe UI", 9, "bold"),
             bg="#f1f5f9",
             fg="#0f172a",
@@ -205,7 +205,7 @@ class InterfazSkyFlow:
 
         btn_despegar = tk.Button(
             self.panel_izq,
-            text="🛫 Despegar Siguiente (FIFO ➔ Radar)",
+            text="🛫 Despegar Siguiente",
             font=("Segoe UI", 9, "bold"),
             bg="#0284c7",
             fg="#ffffff",
@@ -255,7 +255,7 @@ class InterfazSkyFlow:
 
         btn_solicitar = tk.Button(
             self.panel_izq,
-            text="🚨 Insertar en Cola de Aterrizaje (Min-Heap)",
+            text="🚨 Solicitar Aterrizaje",
             font=("Segoe UI", 9, "bold"),
             bg="#fef3c7",
             fg="#92400e",
@@ -277,7 +277,7 @@ class InterfazSkyFlow:
 
         btn_aterrizar = tk.Button(
             self.panel_izq,
-            text="🛬 Aterrizar Más Urgente (O(log n))",
+            text="🛬 Aterrizar Más Urgente",
             font=("Segoe UI", 9, "bold"),
             bg="#16a34a",
             fg="#ffffff",
@@ -295,7 +295,7 @@ class InterfazSkyFlow:
         # --- SECCIÓN 5: DESHACER (UNDO) Y PILA ---
         lbl_sec5 = tk.Label(
             self.panel_izq,
-            text="HISTORIAL Y UNDO [Pila LIFO: O(1)]",
+            text="HISTORIAL Y DESHACER",
             font=("Segoe UI", 10, "bold"),
             bg=COLOR_PANEL,
             fg=COLOR_TEXTO,
@@ -304,7 +304,7 @@ class InterfazSkyFlow:
 
         btn_undo = tk.Button(
             self.panel_izq,
-            text="↩ Deshacer Último Comando (Undo)",
+            text="↩ Deshacer Último Comando",
             font=("Segoe UI", 9, "bold"),
             bg="#f8fafc",
             fg="#475569",
@@ -318,7 +318,7 @@ class InterfazSkyFlow:
 
         self.lbl_tope_pila = tk.Label(
             self.panel_izq,
-            text="Tope: (Pila vacía)",
+            text="Tope: Pila vacía",
             font=("Segoe UI", 8, "italic"),
             bg=COLOR_PANEL,
             fg=COLOR_SUBTEXTO,
@@ -332,7 +332,7 @@ class InterfazSkyFlow:
         # 1. ZONA DE CARRETEO Y PISTA DE DESPEGUE (COLA FIFO)
         f_pista = tk.LabelFrame(
             self.panel_der,
-            text=" 🛫 PISTA DE CARRETEO Y DESPEGUE [Cola FIFO - O(1)] ",
+            text=" 🛫 PISTA DE CARRETEO Y DESPEGUE ",
             font=("Segoe UI", 10, "bold"),
             bg=COLOR_PANEL,
             fg=COLOR_TEXTO,
@@ -350,7 +350,7 @@ class InterfazSkyFlow:
         # 2. RADAR DEL ESPACIO AÉREO (LISTA DOBLEMENTE ENLAZADA)
         f_radar = tk.LabelFrame(
             self.panel_der,
-            text=" 🛰 ESPACIO AÉREO ACTIVO / RADAR [Lista Doblemente Enlazada - O(1)] ",
+            text=" 🛰 ESPACIO AÉREO ACTIVO / RADAR ",
             font=("Segoe UI", 10, "bold"),
             bg=COLOR_PANEL,
             fg=COLOR_TEXTO,
@@ -367,7 +367,7 @@ class InterfazSkyFlow:
         # 3. ZONA DE APROXIMACIÓN / COLA DE ATERRIZAJE (MIN-HEAP)
         f_heap = tk.LabelFrame(
             self.panel_der,
-            text=" 🚨 APROXIMACIÓN DE ATERRIZAJE [Min-Heap / Prioridad - O(log n)] ",
+            text=" 🚨 APROXIMACIÓN DE ATERRIZAJE ",
             font=("Segoe UI", 10, "bold"),
             bg=COLOR_PANEL,
             fg=COLOR_TEXTO,
@@ -467,7 +467,7 @@ class InterfazSkyFlow:
             c.create_text(
                 cx,
                 cy,
-                text="✈ Pista libre (Cola FIFO vacía - Ningún avión esperando despegue)",
+                text="✈ Pista libre - Ningún avión esperando despegue",
                 fill="#e2e8f0",
                 font=("Segoe UI", 9, "italic"),
             )
@@ -506,9 +506,9 @@ class InterfazSkyFlow:
 
             # Indicadores didácticos de punteros: frente y final
             if i == 0:
-                c.create_text(x1 + card_w // 2, y1 - 8, text="▼ frente (sale primero)", fill="#38bdf8", font=("Segoe UI", 8, "bold"))
+                c.create_text(x1 + card_w // 2, y1 - 8, text="▼ Frente", fill="#38bdf8", font=("Segoe UI", 8, "bold"))
             if i == len(vuelos) - 1:
-                c.create_text(x1 + card_w // 2, y2 + 8, text="▲ final (último)", fill="#fbbf24", font=("Segoe UI", 8, "bold"))
+                c.create_text(x1 + card_w // 2, y2 + 8, text="▲ Final", fill="#fbbf24", font=("Segoe UI", 8, "bold"))
 
             # Flecha de enlace entre nodos
             if i < len(vuelos) - 1:
@@ -536,7 +536,7 @@ class InterfazSkyFlow:
             c.create_text(
                 cx,
                 cy,
-                text="📡 Espacio aéreo despejado\n(Lista Doble vacía - Autoriza despegues para ver aviones en vuelo)",
+                text="📡 Espacio aéreo despejado\nAutoriza despegues para ver aviones en vuelo",
                 fill="#0284c7",
                 font=("Segoe UI", 10, "italic"),
                 justify="center",
@@ -599,7 +599,7 @@ class InterfazSkyFlow:
             c.create_text(
                 ancho // 2,
                 alto // 2,
-                text="🛬 Rampa de aproximación libre (Min-Heap vacío - No hay vuelos con solicitud de aterrizaje)",
+                text="🛬 Rampa de aproximación libre - No hay vuelos con solicitud de aterrizaje",
                 fill="#94a3b8",
                 font=("Segoe UI", 10, "italic"),
             )
@@ -632,21 +632,21 @@ class InterfazSkyFlow:
 
             # Título de la tarjeta
             c.create_text(
-                x1 + 6, y1 + 9, text=f"🚨 {vuelo.codigo} ({cfg['texto'].split('-')[0].strip()})", fill=cfg["fg"], font=("Segoe UI", 8, "bold"), anchor="w"
+                x1 + 6, y1 + 9, text=f"🚨 {vuelo.codigo} - {cfg['texto'].split('-')[0].strip()}", fill=cfg["fg"], font=("Segoe UI", 8, "bold"), anchor="w"
             )
             c.create_text(x1 + 6, y1 + 28, text=f"{vuelo.aerolinea} -> {vuelo.destino}", fill=COLOR_TEXTO, font=("Segoe UI", 8), anchor="w")
 
             if es_raiz:
                 c.create_text(x1 + card_w // 2, y2 + 8, text="★ Raíz: Próximo en Aterrizar", fill="#b91c1c", font=("Segoe UI", 8, "bold"))
             else:
-                c.create_text(x1 + card_w // 2, y2 + 8, text=f"Pos. Heap [{i}]", fill=COLOR_SUBTEXTO, font=("Segoe UI", 7))
+                c.create_text(x1 + card_w // 2, y2 + 8, text=f"Posición {i}", fill=COLOR_SUBTEXTO, font=("Segoe UI", 7))
 
     def _actualizar_info_pila(self):
         """Actualiza la etiqueta con el comando en el tope de la Pila LIFO."""
         tope = self.torre.historial.peek()
         total = len(self.torre.historial)
         if tope is None:
-            self.lbl_tope_pila.config(text=f"Tope: (Pila vacía) | Total: 0")
+            self.lbl_tope_pila.config(text=f"Tope: Pila vacía | Total: 0")
         else:
             tipo, vuelo = tope
             self.lbl_tope_pila.config(
@@ -657,9 +657,11 @@ class InterfazSkyFlow:
         """Rellena el selector con los vuelos actualmente en vuelo en el radar."""
         vuelos_radar = [v.codigo for v in self.torre.radar.listar() if v.estado == "EN_VUELO"]
         self.combo_radar["values"] = vuelos_radar
-        if vuelos_radar and not self.combo_radar.get():
-            self.combo_radar.current(0)
-        elif not vuelos_radar:
+        valor_actual = self.combo_radar.get()
+        if vuelos_radar:
+            if valor_actual not in vuelos_radar:
+                self.combo_radar.current(0)
+        else:
             self.combo_radar.set("")
 
     def seleccionar_vuelo_radar(self, codigo):
@@ -704,7 +706,7 @@ class InterfazSkyFlow:
 
         vuelo = self.torre.solicitar_aterrizaje(codigo, nivel)
         if vuelo is None:
-            messagebox.showerror("Error", f"El vuelo {codigo} no se encuentra en el radar o no está en estado EN_VUELO.")
+            self.actualizar_vistas()
             return
 
         self.actualizar_vistas()
@@ -715,20 +717,13 @@ class InterfazSkyFlow:
             messagebox.showinfo("Rampa Libre", "No hay vuelos en la cola de aterrizaje solicitando pista.")
             return
         self.actualizar_vistas()
-        messagebox.showinfo(
-            "Aterrizaje Exitoso",
-            f"El vuelo {vuelo.codigo} ({vuelo.aerolinea}) ha aterrizado con éxito.\n"
-            f"Prioridad atendida: Nivel {vuelo.nivel_emergencia}",
-        )
 
     def accion_deshacer(self):
         cmd = self.torre.deshacer()
         if cmd is None:
             messagebox.showinfo("Pila Vacía", "No hay comandos en el historial para deshacer.")
             return
-        tipo, vuelo = cmd
         self.actualizar_vistas()
-        messagebox.showinfo("Comando Deshecho", f"Se deshizo la operación:\n{tipo} de {vuelo.codigo}")
 
     def cargar_vuelo_demo(self):
         """Inyecta un vuelo aleatorio a la cola para facilitar la sustentación en vivo."""

@@ -2,7 +2,7 @@ from simulador import Simulador
 
 MENU = """
 ===== SKYFLOW - TORRE DE CONTROL =====
-1. Pedir despegue (nuevo vuelo a la fila)
+1. Pedir despegue
 2. Despegar siguiente
 3. Solicitar aterrizaje / declarar emergencia
 4. Aterrizar el más urgente
@@ -11,7 +11,7 @@ MENU = """
 7. Ver cola de aterrizaje
 8. Deshacer último comando
 9. Ver historial
-G. Abrir Interfaz Gráfica (Tkinter)
+G. Abrir Interfaz Gráfica
 0. Salir"""
 
 
@@ -30,7 +30,7 @@ def opcion_pedir(torre):
 
 def opcion_solicitar(torre):
     codigo = input("Código del vuelo en el radar: ")
-    nivel = input("Nivel de emergencia (1 = crítico ... 4 = normal): ")
+    nivel = input("Nivel de emergencia [1-4]: ")
     if nivel not in ("1", "2", "3", "4"):
         print("Nivel inválido.")
         return
